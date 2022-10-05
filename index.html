@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Password Manager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> 
+    <link rel="stylesheet" href="style.css"> 
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+        <header>
+            <nav>
+                <div class="brand"><a href=""><i class = "fa fa-lock" aria-hidden = true></i>&nbsp;Password Manager</a></div>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="javascript:;" onclick="displayModal('login-modal');">Login</a></li>
+                    <li><a href="javascript:;" onclick="displayModal('signup-modal');">SignUp</a></li>
+                    <li><a href="javascript:;" onclick="displayModal('password-modal');">View</a></li>
+                    <li><a href="javascript:;" onclick="displayModal('add-password-modal');">Add</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <!--Modals-->
+
+    <div class="modals-wrapper">
+        <span id="close-modal" title="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+        <!--login modal-->
+        <div class="modal" id="login-modal">
+            <form action="">
+                <h2>Login</h2>
+                <input type="text" name="username" placeholder="username">
+                <input type="password" name="password" placeholder="password">
+                <input type="submit" value="login">
+            </form>
+        </div>
+
+        <!--signup modal-->
+        <div class="modal" id="signup-modal">
+            <form action="">
+                <h2>SignUp</h2>
+                <input type="text" name="username" placeholder="username">
+                <input type="email" name="email" placeholder="email">
+                
+                <input type="password" name="password" placeholder="password">
+                <input type="password2" name="password2" placeholder="confirm password">
+                <input type="submit" value="register">
+            </form>
+        </div>
+
+        <!--password modal-->
+        <div class="modal" id="password-modal">
+            <h2>URL or Name</h2>
+            <img width="50" height="50" src="https://cdn.pixabay.com/photo/2015/12/11/11/43/google-1088004_1280.png" alt="">
+            <input type="email" name="email" placeholder="email"><i class="fa-solid fa-copy" title = "copy to clipboard"></i>
+            <input type="password" name="password" value="password"><i class="fa-solid fa-copy" title = "copy to clipboard"></i>
+
+        </div>
+
+        <!--add password modal-->
+        <div class="modal" id="add-password-modal">
+            <form action="">
+                <h2>Add new password</h2>
+                <input type="text" name="url" placeholder="url of website">
+                <input type="email" name="email" placeholder="email">
+                <input type="password" name="password" placeholder="password">
+                <input type="submit" value="save">
+            </form>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <div class="card">
+            <div class = actions>&nbsp;Actions
+                <a href="" class="action-item">Delete</a>
+                <a href="" class="action-item">View</a>
+                <a href="" class="action-item">Update</a>
+            </div>
+            <img width="50" height="50" src="https://cdn.pixabay.com/photo/2015/12/11/11/43/google-1088004_1280.png">
+            <div class = "name"> Google Accaunt </div>
+        </div>
+        <div class="card">
+            <div class = actions>&nbsp;Actions
+                <a href="" class="action-item">Delete</a>
+                <a href="" class="action-item">View</a>
+                <a href="" class="action-item">Update</a>
+            </div>
+            <img width="50" height="50" src="https://cdn.pixabay.com/photo/2015/12/11/11/43/google-1088004_1280.png">
+            <div class = "name"> Google Accaunt </div>
+        </div>
+        <div class="card">
+            <div class = actions>&nbsp;Actions
+                <a href="" class="action-item">Delete</a>
+                <a href="" class="action-item">View</a>
+                <a href="" class="action-item">Update</a>
+            </div>
+            <img width="50" height="50" src="https://cdn.pixabay.com/photo/2015/12/11/11/43/google-1088004_1280.png">
+            <div class = "name"> Google Accaunt </div>
+        </div>
+        <div class="card">
+            <div class = actions>&nbsp;Actions
+                <a href="" class="action-item">Delete</a>
+                <a href="" class="action-item">View</a>
+                <a href="" class="action-item">Update</a>
+            </div>
+            <img width="50" height="50" src="https://cdn.pixabay.com/photo/2015/12/11/11/43/google-1088004_1280.png">
+            <div class = "name"> Google Accaunt </div>
+        </div>
+        <div class="card">
+            <div class = actions>&nbsp;Actions
+                <a href="" class="action-item">Delete</a>
+                <a href="" class="action-item">View</a>
+                <a href="" class="action-item">Update</a>
+            </div>
+            <img width="50" height="50" src="https://cdn.pixabay.com/photo/2015/12/11/11/43/google-1088004_1280.png">
+            <div class = "name"> Google Accaunt </div>
+        </div>
+        <div class="card">
+            <div class = actions>&nbsp;Actions
+                <a href="" class="action-item">Delete</a>
+                <a href="" class="action-item">View</a>
+                <a href="" class="action-item">Update</a>
+            </div>
+            <img width="50" height="50" src="https://cdn.pixabay.com/photo/2015/12/11/11/43/google-1088004_1280.png">
+            <div class = "name"> Google Accaunt </div>
+        </div>
+        <div class="card">
+            <div class = actions>&nbsp;Actions
+                <a href="" class="action-item">Delete</a>
+                <a href="" class="action-item">View</a>
+                <a href="" class="action-item">Update</a>
+            </div>
+            <img width="50" height="50" src="https://cdn.pixabay.com/photo/2015/12/11/11/43/google-1088004_1280.png">
+            <div class = "name"> Google Accaunt </div>
+        </div>
+
+
+    </div>
+
+    <footer>
+        <a href="">Link To The Project</a>
+    </footer>
+
+</body>
+</html>
